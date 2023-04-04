@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="scrap_css.css">
+<body>
+    <div class="background">
+        <div class="nav">
+            <img class="logo" src="SCRAP_LOGP.png" alt="logo">
+            <h1>E-way Scrap</h1>
+            <button class="button_home" type="submit">
+                <p>Home</p>
+            </button>
+            <button class="button_about" type="submit">
+                <p>About</p>
+            </button>
+            <button class="button_services" type="submit">
+                <p>Services</p>
+            </button>
+            <button class="button_contact" type="submit">
+                <p>Contact</p>
+            </button>
+            <button class="button_feedback" type="submit">
+                <p>Feedback</p>
+            </button>
+        </div>
+        <div class="sider-box">
+            <div id="slider">
+                <img src="clothes.png">
+                <img src="old_books.png">
+                <img src="bottles.png">
+                <img src="Scrap.png">
+                <img src="others.png">
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+            <div>
+                <p class="moto">Call us and we'll be there</p>
+            </div>
+            <div>
+                <button class="pick_request" type="submit"><p>Pick-up request</p></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById("btn1");
+        var btn3 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        btn1.onclick = function () {
+            slide.style.transform = "translateX(0px)";
+            btn1.classList.add("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+        }
+        btn2.onclick = function () {
+            slide.style.transform = "translateX(-350px)";
+            btn2.classList.add("active");
+            btn3.classList.remove("active");
+            btn4.classList.remove("active");
+            btn1.classList.remove("active");
+        }
+        btn3.onclick = function () {
+            slide.style.transform = "translateX(-735px)";
+            btn3.classList.add("active");
+            btn4.classList.remove("active");
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+        }
+        btn4.onclick = function () {
+            slide.style.transform = "translateX(-1100px)";
+            btn4.classList.add("active");
+            btn1.classList.remove("active");
+            btn2.classList.remove("active");
+            btn3.classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>

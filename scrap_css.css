@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color: #f5ff67;
+    height: 1080px;
+    opacity: 95%;
+    grid-template-rows: 10% 90%;
+}
+.nav{
+    display: flex;
+    background-color: #B4FF9F;
+    justify-content:space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.nav h1{
+    color: #ff8282;
+    text-align:center;
+    margin-top: -3px;
+    margin-left: 500px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    cursor: pointer;
+}
+.logo{
+    height: 80px;
+}
+.button_home{
+    border-radius: 100px;
+    height: 50px;
+    width: 70px;
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-color:transparent;
+    border-width: 2.5px; 
+    margin-left: 190px;   
+}
+.button_home p{
+    font-size: 20px;
+}
+.button_home:hover{
+    background-color: #F9FFA4;
+    transition: 0.4s;
+}
+.button_about{
+    border-radius: 80px;
+    height: 50px;
+    width: 70px;
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-color:transparent;
+    border-width: 2.5px; 
+    margin-left: 0px;   
+}
+.button_about p{
+    font-size: 20px;
+}
+.button_about:hover{
+    background-color: #F9FFA4;
+    transition: 0.4s;
+}
+.button_services{
+    border-radius:80px;
+    height: 50px;
+    width: 70px;
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-color:transparent;
+    border-width: 2.5px; 
+    margin-left: 0px;   
+}
+.button_services p{
+    font-size: 20px;
+}
+.button_services:hover{
+    background-color: #F9FFA4;
+    transition: 0.4s;
+}
+.button_contact{
+    border-radius: 80px;
+    height: 50px;
+    width: 70px;
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-color:transparent;
+    border-width: 2.5px; 
+    margin-left: 0px;   
+}
+.button_contact p{
+    font-size: 20px;
+}
+.button_contact:hover{
+    background-color: #F9FFA4;
+    transition: 0.4s;
+}
+.button_feedback{
+    border-radius: 80px;
+    height: 50px;
+    width: 90px;
+    margin-top: 10px;
+    box-sizing: content-box;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border-color:transparent;
+    border-width: 2.5px; 
+    margin-left: 0px;
+    margin-right: 10px;   
+}
+.button_feedback p{
+    font-size: 20px;
+}
+.button_feedback:hover{
+    background-color: #F9FFA4;
+    transition: 0.4s;
+}
+.slider-box{
+    width: 70%;
+    height: 70vh;
+    margin: 20px auto;
+    position: relative;
+    overflow-x:hidden;
+}
+#slider{
+    width: 50%;
+    display: inline-flex;
+    transition: 0.7s;
+    margin-top: 10px;
+    margin-left: 35%;   
+}
+#slider img{
+    width: 50%;
+}
+.indicators{
+    position:absolute;
+    left: 50%;
+    bottom: 260px;
+    transform: translateX(-50%);
+}
+.indicators span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fd8787;
+    cursor: 7;
+}
+.active{
+    background: #ffffff!important;
+}
+.moto{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top:10px;
+    font-weight:500;
+}
+.pick_request{
+    margin-left: 42%;
+    margin-top: 10px;
+    height:50px;
+    width:250px;
+    border-radius:100px;
+    background-color: transparent; 
+    cursor: pointer;
+    border-color: #ff8282;
+    border-width:3.6px;;
+}
+.pick_request::before{
+    transition: 0.4s all ease-in-out;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+.pick_request:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: #a1ff87;
+}
+.pick_request p{
+    font-size:23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800; 
+}
